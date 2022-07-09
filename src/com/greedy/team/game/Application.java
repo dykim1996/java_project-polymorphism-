@@ -15,7 +15,7 @@ public class Application {
 		
 		System.out.println("\n1. 게임 시작");
 		System.out.println("2. 게임 Rule");
-		
+		 
 		System.out.print(">> 메뉴선택(숫자입력) : ");
 		int no = sc.nextInt();
 		

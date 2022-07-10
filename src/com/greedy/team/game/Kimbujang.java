@@ -13,6 +13,7 @@ public class Kimbujang extends EscapeDTO {
 	//안주먹
 	@Override
 	public void recharge() {
+		
 		if(this.hp < 100){
 			System.out.println("김부장이 안주를 먹습니다. 김부장의 체력이 " +  pluseHp + "% 충전되었습니다.");
 			this.hp += pluseHp;
@@ -50,7 +51,7 @@ public class Kimbujang extends EscapeDTO {
 						System.out.println();
 						System.out.println("대리기사가 도착했습니다! 'D' 를 눌러 출발해주세요!");
 						
-						for(int m = 0; m < iarr.length; m++)
+						for(int m = 0; m < Str.length; m++)
 						{
 							str += " ";
 							Str[m] = str;			//공백으로 채워져 있는 배열
@@ -58,8 +59,10 @@ public class Kimbujang extends EscapeDTO {
 						for(int i = 0; i < 17; i++) // Str[50-3*i] 값이 음수가 되면 오류
 						{
 							char num = sc.next().charAt(0);
-							if(num == 68 | num == 100)
+							System.out.println();
+							if(num == 68 | num == 100) //아스키코드
 							{
+								
 								daeri = " - "+ daeri;				//택시 앞에 -> 를 추가시켜 늘린다.
 								System.out.print(iarr[i] = hof + daeri + Str[50-3*i] + "집");// Str의 공백의 수를 줄여서
 																							// '집' 키워드가 움직이지 않게 고정하는 역할
@@ -106,7 +109,7 @@ public class Kimbujang extends EscapeDTO {
 			// 1~100 사이의 난수생성
 			int computerNum = random.nextInt(10000) % 100 + 1;
 			// 실제 게임시에는 주석처리 하세요. 확인용입니다.
-			System.out.println("컴퓨터가 생성한 난수:"+ computerNum);
+			//System.out.println("컴퓨터가 생성한 난수:"+ computerNum);
 			// 게임은 7번 진행
 			for (int i = 1; i <= 7; i++) {
 				System.out.print("1~100까지 숫자를 입력하세요:");
@@ -203,7 +206,7 @@ public class Kimbujang extends EscapeDTO {
 				
 			}else {
 				System.out.println("편의점을 나갑니다.");
-				break;
+				return;
 			}
 		}
 		if(number == 1) {

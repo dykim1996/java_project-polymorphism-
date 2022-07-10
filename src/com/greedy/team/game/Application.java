@@ -39,12 +39,12 @@ public class Application {
 		System.out.println("◆ 초기 체력은 100이며 캐릭터별로 체력 증감이 다릅니다.");
 		System.out.println("◆ 초기 소지금은 1000이상 10000이하로 랜덤으로 지급 됩니다.");
 		System.out.println("◆ 조회 체력이 50이상일 경우 한잔 마시기, 50미만 안주먹기");
-		System.out.println("◆ 체력이 40이하가 되면 미니술게임에 이겨야 합니다.");
 		System.out.println("◆ 미니술게임에서 이기면 체력 100%와 2000원을 획득합니다.");
 		System.out.println("◆ 마시기 : 마신횟수증가, 체력조회");
 		System.out.println("◆ 안주먹기 : 체력충전, 조회");
 		System.out.println("◆ 편의점 가기 : 상품구입, 조회");
 		System.out.println("◆ 조회 : 현재 상황 조회");
+		System.out.println("◆ 미션완료 후 : 키보드" +" d,D " + "클릭으로 집까지 도달하기 ");
 		System.out.print("\n>>계속 읽으시려면 Enter : ");
 		String check1 = sc.nextLine();
 		System.out.println("\n===== 캐릭터 설명 ======");

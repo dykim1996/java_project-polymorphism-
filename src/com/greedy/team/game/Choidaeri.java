@@ -48,7 +48,7 @@ public class Choidaeri extends EscapeDTO {
 					{
 						System.out.println();
 						System.out.println("택시가 도착했습니다! 'D' 를 눌러 출발해주세요!");
-						for(int m = 0; m < iarr.length; m++)
+						for(int m = 0; m < Str.length; m++)
 						{
 							str += " ";
 							Str[m] = str;			//공백으로 채워져 있는 배열
@@ -221,7 +221,7 @@ public class Choidaeri extends EscapeDTO {
 					continue;
 				case 2 :
 					System.out.println("편의점을 나갑니다.");
-					break;
+					return;
 				}
 			
 			}

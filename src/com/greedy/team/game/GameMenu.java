@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class GameMenu {
 
-	
-
-	private String hp;
 
 	public void mainMenu() {
+		
+		
+	
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -153,5 +153,8 @@ public class GameMenu {
 		
 
 	}
+
+
+	
 
 }

@@ -47,7 +47,7 @@ public class Parkintern extends EscapeDTO {
 					if(answer.equalsIgnoreCase("y")) {
 						System.out.println();
 						System.out.println("막차를 탔습니다!'D' 를 눌러 출발해주세요!");
-						for(int m = 0; m < iarr.length; m++)
+						for(int m = 0; m < Str.length; m++)
 						{
 							str += " ";
 							Str[m] = str;			//공백으로 채워져 있는 배열
@@ -104,7 +104,7 @@ public class Parkintern extends EscapeDTO {
 			// 1~100 사이의 난수생성
 			int computerNum = random.nextInt(10000) % 100 + 1;
 			// 실제 게임시에는 주석처리 하세요. 확인용입니다.
-			System.out.println("컴퓨터가 생성한 난수:"+ computerNum);
+			//System.out.println("컴퓨터가 생성한 난수:"+ computerNum);
 			// 게임은 7번 진행
 			for (int i = 1; i <= 7; i++) {
 				System.out.print("1~100까지 숫자를 입력하세요:");
@@ -123,7 +123,9 @@ public class Parkintern extends EscapeDTO {
 					System.out.println(i+"번 안에 성공했습니다.");
 					System.out.println("---------------------------------------------");		
 					hp += 100;
+					coin += 2000;
 					System.out.println("축하합니다!! 박인턴의 체력이 100% 충전 되었습니다! >_<");
+					System.out.println("축하합니다!! 박인턴이 2000원을 얻었습니다! >_< ");
 					
 					//성공시 true로 변경 
 					isSuccess = true;					
@@ -214,7 +216,7 @@ public class Parkintern extends EscapeDTO {
 					continue;
 				case 2 :
 					System.out.println("편의점을 나갑니다.");
-					break;
+					return;
 				}
 			
 			}

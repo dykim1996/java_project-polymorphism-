@@ -11,7 +11,6 @@ public abstract class EscapeDTO {
 	protected String []Str = new String [100];
 	protected static int coin = (int)(Math.random()*10000)+1000;
 	
-	
 
 	public abstract void recharge();
 	

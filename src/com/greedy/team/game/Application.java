@@ -12,7 +12,6 @@ public class Application {
 		System.out.println("--------* 우리팀쵝오조 제작 *---------");
 		System.out.println("----------------------------------");
 		while(true) {
-		
 		System.out.println("\n1. 게임 시작");
 		System.out.println("2. 게임 Rule");
 		 
